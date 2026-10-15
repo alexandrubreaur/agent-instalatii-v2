@@ -33,7 +33,7 @@ if prompt := st.chat_input("Adreseaza o intrebare din normative..."):
     with st.chat_message("assistant"):
         try:
             emb_intrebare = genai.embed_content(
-                model="models/text-embedding-004",
+                model="models/gemini-embedding-001",
                 content=prompt
             )['embedding']
 
