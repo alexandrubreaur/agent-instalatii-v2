@@ -13,7 +13,7 @@ if not google_key or not pinecone_key:
     st.stop()
 
 genai.configure(api_key=google_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-3.6-flash')
 
 pc = Pinecone(api_key=pinecone_key)
 index = pc.Index("normative-instalatii")
